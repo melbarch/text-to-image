@@ -21,15 +21,18 @@
           class="bg-gray-200 border border-gray-400 shadow text-gray-700 focus:outline-none focus:bg-white focus:border-purple-500"
           rows="4"
           cols="50"
+          id="text"
         ></textarea>
       </div>
       <div class="text-center py-2 m-2">
         <button
+        onclick="convert()"
           class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
         >
           <span>Convert</span>
         </button>
       </div>
+      <canvas id="myCanvas" width="500" height="500"></canvas>
     </div>
 
     <footer>
