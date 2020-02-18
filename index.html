@@ -2,15 +2,55 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>Text to image | canvas</title>
     <meta name="author" content="Mohamed EL BARCHANY" />
     <meta
       name="description"
       content="tiny application to convert text into image, built while learning canvas"
     />
     <meta name="keywords" content="canvas,image,converter" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    Hello world!
+  <body class="bg-gray-100">
+    <div class="container md mx-auto ">
+      <div class="text-center py-2 m-2">
+        <textarea
+          class="bg-gray-200 border border-gray-400 shadow text-gray-700 focus:outline-none focus:bg-white focus:border-purple-500"
+          rows="4"
+          cols="50"
+        ></textarea>
+      </div>
+      <div class="text-center py-2 m-2">
+        <button
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          <span>Convert</span>
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://melbarch.com">
+        <div
+          style="text-align: center;
+          position: fixed;
+          bottom: 8px;
+          right: 8px;
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 100;
+          font-family: sans-serif;
+          text-decoration-color: rgba(0, 0, 0, 0);
+          letter-spacing: 2px;
+        "
+        >
+          BY : Mohamed ELBARCHANY
+        </div>
+      </a>
+    </footer>
+    <script type="text/javascript" src="./assets/app.js"></script>
   </body>
 </html>
